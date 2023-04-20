@@ -1,0 +1,25 @@
+<!DOCTYPE HTML> 
+<html lang="en-US">
+    <head>
+        <title>Guess That Number</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body> 
+        <header>
+            <h1>Guess that Number!</h1>
+            <h2>The Rules are simple! Just guess a number between 1 and 15 and you win!</h2>
+            <div class="overlay"></div>
+        </header>
+        <hr>
+        <main id="game-area">
+            <form action="index.html">
+                <label for="attempt">Place your guess here!</label> <br>
+                <input type="number" name="attempt" id="attempt" min="1" max="15" step="1" required/> <br>
+                <input id="answer" type="button" value="submit"/>
+            </form>
+            <button type="reset" onclick="reloadPage()">reset</button>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
